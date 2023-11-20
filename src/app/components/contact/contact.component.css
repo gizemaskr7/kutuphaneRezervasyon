@@ -1,0 +1,9 @@
+.img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 105vh; 
+    filter: brightness(50%); 
+    opacity: 0.9;
+  }
