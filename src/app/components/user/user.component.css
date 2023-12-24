@@ -1,0 +1,40 @@
+.rezervasyon-container {
+    text-align: center;
+  }
+  
+  .oda-masalar {
+    display: flex;
+    justify-content: space-around;
+    background-size: cover;
+    padding: 20px;
+  }
+  
+  .oda {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    flex: 1;
+    background-color: #f7e6ff; /* Odalar için arka plan rengi */
+  }
+  
+  .masa {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    margin: 5px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #ffcc80; /* Masalar için arka plan rengi */
+  }
+  
+  .masa.rezerve-edilmis {
+    background-color: #844b47; /* Rezerve edilmiş masalar için farklı bir renk */
+    color: white;
+  }
+  
+  .masa:hover {
+    background-color: #f0f0f0;
+  }
+  mat-grid-tile {
+    background: rgb(168, 196, 205);
+  }

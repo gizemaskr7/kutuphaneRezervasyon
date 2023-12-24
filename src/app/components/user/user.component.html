@@ -1,0 +1,26 @@
+<div class="rezervasyon-container">
+  <h2>Oda ve Masa Seçimi</h2>
+
+  <mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile>
+      <div class="oda-masalar">
+        <div *ngFor="let oda of odalar" class="oda" (click)="odaSec(oda)">
+          Oda 1 <br>
+          <div *ngFor="let masa of oda.masalar" class="masa" [ngClass]="{ 'rezerve-edilmis': masa.rezerveEdildi }"
+            (click)="masaSec(masa)">
+            {{ masa.numara }}
+          </div>
+        </div>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>2</mat-grid-tile>
+    <mat-grid-tile>3</mat-grid-tile>
+    <mat-grid-tile>4</mat-grid-tile>
+  </mat-grid-list>
+  <div *ngIf="secilenOda">
+    Seçilen Oda: {{ secilenOda.id }}
+  </div>
+  <div *ngIf="secilenMasa">
+    Seçilen Masa: {{ secilenMasa.numara }}
+  </div>
+</div>

@@ -1,0 +1,125 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <div class="container">
+     <a class="library navbar-brand" routerLink="/">The Library.</a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNav">
+       <ul class="navbar-nav">
+         <li class="nav-item">
+           <a class="nav-link" routerLink="/" routerLinkActive="active" (click)="scrollToElement('homeSection')">Ana Sayfa</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" routerLink="/hakkimizda" routerLinkActive="active" (click)="scrollToElement('aboutSection')">Hakkımızda</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" routerLink="/iletisim" routerLinkActive="active" (click)="scrollToElement('contactSection')">İletişim</a>
+         </li>
+       </ul>
+     </div>
+     <ul class="navbar-nav ml-auto">
+       <li class="nav-item">
+         <a class="nav-link"  routerLink="/register">
+           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+               <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+             </svg>
+           <span style="padding-left: 5px;" class="bi bi-person-fill"  routerLinkActive="active" >Kayıt Ol</span> 
+           
+         </a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" routerLink="/login">
+           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+               <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+               <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+             </svg>
+             <span style="padding-left: 5px;" class="bi bi-box-arrow-in-right"   routerLinkActive="active" >Giriş Yap</span> 
+         </a>
+       </li>
+     </ul>
+   </div>
+ </nav>
+ 
+<!-- -------------------------------header------------------------------------ -->
+<div class="home">
+    <img class="img" src="../../../assets/küt.jpg" alt="">
+    <div class="title">
+       CG-WORKSPACE
+    </div>
+    <h4>Bizimle birlikte bu yenilikçi ortamda çalışmak için</h4>
+    <div class="rez">
+       <input type="button" class="btn btn-outline-light" routerLink="/login" value="Rezarvasyon Al">
+    </div>
+ </div>
+ 
+<!-- ---------------------------------HOME--------------------------------------------  -->
+
+<div class="about">
+   <img class="img" src="../../../assets/hakkimizda.jpg" alt="">
+ 
+   <div class="title">
+       <h2>HAKKIMIZDA</h2>
+
+       Çalışma, öğrenme ve keşfetmenin merkezi olan CG Workspace, 7 Kasım 2021 tarihinden bu yana zengin
+       kaynakları ve etkileyici ortamıyla bilgiye açılan bir kapı niteliği taşıyor. İsminden de
+       anlaşılabileceği gibi, bu alan sadece bir kütüphane değil; aynı zamanda öğrenmeye yönelik bir
+       yaşam
+       alanı.
+
+       CG Workspace, sadece kitapların bulunduğu bir mekan değil. Burası, zengin bir kaynak yelpazesi
+       sunan,
+       modern teknolojiyle donatılmış, dinamik ve katılımcı bir merkez. Teknoloji, sanat, bilim ve iş
+       dünyasından kaynakları bir araya getirerek, herkesin ilgi alanlarına hitap etmeyi amaçlıyor.
+
+       Bu mekanda, rahat çalışma alanları, geniş kütüphane koleksiyonu, interaktif eğitim materyalleri
+       ve
+       etkinliklerle dolu programlar bulabilirsiniz. Öğrenmeyi desteklemek adına düzenlenen atölyeler,
+       seminerler ve etkinlikler, katılımcıların bilgiyi pratiğe dökmelerine ve birbirlerinden
+       öğrenmelerine
+       olanak sağlıyor.
+
+       CG Workspace, sadece bilgiye erişimi kolaylaştırmakla kalmıyor, aynı zamanda bir topluluk
+       oluşturmayı da
+       hedefliyor. Burada bulunanlar, bilgi paylaşımı, deneyimlerini aktarma ve ortak ilgi alanları
+       doğrultusunda etkileşimde bulunma şansı buluyorlar.
+
+       Eğer siz de bilginin sonsuz dünyasında keşif yapmak, öğrenmek ve paylaşmak istiyorsanız, CG
+       Workspace
+       sizi bekliyor. Gelip bu dinamik ve ilham verici ortamda kendinizi bulabilir, bilgiye dair
+       sınırlarınızı
+       genişletebilirsiniz.
+
+       Siz de CG Workspace’in büyüleyici dünyasına katılmak için bizi ziyaret edin, yeni keşiflere
+       açılan
+       kapıyı birlikte aralayalım!
+
+   </div>
+
+</div>
+
+<!-- ------------------hakkımızda---------------------------------------------- -->
+
+<div class="contact">
+<img class="img" src="../../../assets/vs.jpg" alt="">
+  
+
+    
+        <div class="title">
+            <h2>Bizimle İletişime Geç</h2>
+            <br>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Kullanıcı Adı" aria-label="Kullanıcı Adı">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" placeholder="Sunucu" aria-label="Sunucu">
+            </div>
+            <br>
+            <div class="input-group">
+                <span class="input-group-text">Yazmak İstedikleriniz:</span>
+                <textarea class="form-control" aria-label="Mesajınız"></textarea>
+            </div>
+            <button type="button" class="btn btn-outline-dark">Gönder</button>
+        </div>
+      </div>
+
+<!-- ------------------------------iletisim------------------------------------ -->
