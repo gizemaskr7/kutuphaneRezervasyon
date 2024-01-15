@@ -2,32 +2,31 @@
   <br>
 <div class="container">
     <h2>Ailemize Hoşgeldin</h2>
-    <form #registerForm="ngForm">
-     
+    <form #registerForm="ngForm" (ngSubmit)="onSubmit()">     
   
       <div class="form-group">
         <label for="name">Ad Soyad:</label>
-        <input type="text" class="form-control" name="name" [(ngModel)]="user.name" required>
+        <input type="text" class="form-control" name="name" [(ngModel)]="user.k_adSoyad" required>
       </div>
   
       <div class="form-group">
         <label for="birthdate">Doğum Tarihi:</label>
-        <input type="date" class="form-control" name="birthdate" [(ngModel)]="user.birthdate" required>
+        <input type="date" class="form-control" name="birthdate" [(ngModel)]="user.k_dogumTarihi" required>
       </div>
   
       <div class="form-group">
         <label for="email">Email:</label>
-        <input type="email" class="form-control" name="email" [(ngModel)]="user.email" required>
+        <input type="email" class="form-control" name="email" [(ngModel)]="user.k_email" required>
       </div>
   
       <div class="form-group">
         <label for="password">Şifre:</label>
-        <input type="password" class="form-control" name="password" [(ngModel)]="user.password" required>
+        <input type="password" class="form-control" name="password" [(ngModel)]="user.k_sifre" required>
       </div>
   
       <div class="form-group" >
         <label for="education">Eğitim Durumu:</label>
-        <select class="form-control" name="education" [(ngModel)]="user.education" required>
+        <select class="form-control" name="education" [(ngModel)]="user.k_egitim" required>
           <option value="ilkokul">İlkokul</option>
           <option value="ortaokul">Ortaokul</option>
           <option value="lise">Lise</option>
@@ -38,7 +37,7 @@
         </select>
       </div>
   
-      <button type="submit" class="btn btn-outline-dark" routerLink="/login">Kayıt Ol</button>
+      <button type="submit" class="btn btn-outline-dark">Kayıt Ol</button>
     </form>
   </div>
 </div>

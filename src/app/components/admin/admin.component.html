@@ -1,0 +1,45 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="rez_id">
+        <th mat-header-cell *matHeaderCellDef> Rezarvasyon ID </th>
+        <td mat-cell *matCellDef="let element"> {{element.rez_id}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="k_adSoyad">
+        <th mat-header-cell *matHeaderCellDef> Ad Soyad </th>
+        <td mat-cell *matCellDef="let element"> {{element.k_adSoyad}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="rez_odaSecimi">
+        <th mat-header-cell *matHeaderCellDef> Oda Adı </th>
+        <td mat-cell *matCellDef="let element"> {{element.rez_odaSecimi}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="rez_masaSecimi">
+        <th mat-header-cell *matHeaderCellDef> Masa Numarası </th>
+        <td mat-cell *matCellDef="let element"> {{element.rez_masaSecimi}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="rez_tarih">
+        <th mat-header-cell *matHeaderCellDef> Tarih </th>
+        <td mat-cell *matCellDef="let element"> {{element.rez_tarih}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="rez_saat">
+        <th mat-header-cell *matHeaderCellDef> Saat </th>
+        <td mat-cell *matCellDef="let element"> {{element.rez_saat}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="k_email">
+        <th mat-header-cell *matHeaderCellDef> Email </th>
+        <td mat-cell *matCellDef="let element"> {{element.k_email}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="k_egitim">
+        <th mat-header-cell *matHeaderCellDef> Eğitim Durumu </th>
+        <td mat-cell *matCellDef="let element"> {{element.k_egitim}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

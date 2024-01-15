@@ -1,0 +1,53 @@
+.rez {
+    width: 50%; 
+    float: left; 
+    height: 100%;
+}
+.rez form {
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.rez label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.rez select,
+.rez input[type="date"],
+.rez input[type="time"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.rez input[type="submit"] {
+    padding: 10px 15px;
+    background-color: #ad650e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: block; 
+    margin: 0 auto;
+}
+
+.rez input[type="submit"]:hover {
+    background-color: #84480c;
+}
+ .rez input[type="button"]{
+    padding: 9px 13x;
+    background-color: #d68b2e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: block; 
+    margin: 0 auto;
+ }

@@ -1,0 +1,46 @@
+<div class="rez ">
+    <br><br><br><br><br><br><br>
+    <form (ngSubmit)="onSubmit()">
+        <label for="tarih">Tarih:</label>
+        <input type="date" id="tarih" name="tarih" [(ngModel)]="rez.rez_tarih" [min]="minDate" (ngModelChange)="tarihDegisti()">
+
+        <br><br>
+
+        <label for="saat">Saat:</label>
+        <input type="time" id="saat" name="saat" [(ngModel)]="rez.rez_saat">
+        <br><br>
+
+        <label for="oda">Oda Seçiniz:</label>
+        <select id="oda" name="oda" [(ngModel)]="rez.rez_odaSecimi">
+            <option value="secenek" disabled selected>Seçiniz...</option>
+            <option value="BilgisayarOdası">Bilgisayar Odası</option>
+            <option value="OkumaOdası">Okuma Odası</option>
+            <option value="ÇalışmaOdası">Çalışma Odası</option>
+            <option value="ÇalışmaOdası2">Çalışma Odası 2</option>
+
+        </select>
+        <br><br>
+        <label for="masa">Masa Seçiniz:</label>
+        <select id="masa" name="masa" [(ngModel)]="rez.rez_masaSecimi">
+            <option value="secenek" selected disabled>Seçiniz...</option>
+            <option value="1" [selected]="textToDisplay.includes('Masa 1')" disabled>Masa 1</option>
+            <option value="2" [selected]="textToDisplay.includes('Masa 2')" disabled>Masa 2</option>
+            <option value="3" [selected]="textToDisplay.includes('Masa 3')" disabled>Masa 3</option>
+            <option value="4" [selected]="textToDisplay.includes('Masa 4')" disabled>Masa 4</option>
+            <option value="5" [selected]="textToDisplay.includes('Masa 5')" disabled>Masa 5</option>
+            <option value="6" [selected]="textToDisplay.includes('Masa 6')" disabled>Masa 6</option>
+        </select>
+        <br><br>
+
+
+        <input type="submit" value="Rezarvasyon Yap"> <br>
+        <a href="/rez">
+            <input type="button" value="Rezarvasyonlarım">
+        </a>
+
+
+    </form>
+
+
+
+</div>

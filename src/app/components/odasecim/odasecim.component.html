@@ -1,0 +1,48 @@
+<div class="secim">
+  <mat-grid-list cols="2" rowHeight="2:2">
+    <mat-grid-tile class="grid-tile">
+      <div class="oda">
+        <h3>Bilgisayar Odası </h3>
+        <div class="kutucuk" (click)="handleClick('BilgisayarOdası','Masa 1', 1)" [class.clicked]="isMasaSelected('BilgisayarOdası', 'Masa 1')" [class.clicked]="selectedTable === 1">Masa 1</div>
+        <div class="kutucuk" (click)="handleClick('BilgisayarOdası','Masa 2', 2)" [class.clicked]="isMasaSelected('BilgisayarOdası', 'Masa 2')" [class.clicked]="selectedTable === 2">Masa 2</div>
+        <div class="kutucuk" (click)="handleClick('BilgisayarOdası','Masa 3', 3)" [class.clicked]="isMasaSelected('BilgisayarOdası', 'Masa 3')" [class.clicked]="selectedTable === 3">Masa 3</div>
+        <div class="kutucuk" (click)="handleClick('BilgisayarOdası','Masa 4', 4)" [class.clicked]="isMasaSelected('BilgisayarOdası', 'Masa 4')" [class.clicked]="selectedTable === 4">Masa 4</div>
+        <div class="kutucuk" (click)="handleClick('BilgisayarOdası','Masa 5', 5)" [class.clicked]="isMasaSelected('BilgisayarOdası', 'Masa 5')" [class.clicked]="selectedTable === 5">Masa 5</div>
+        <div class="kutucuk" (click)="handleClick('BilgisayarOdası','Masa 6', 6)" [class.clicked]="isMasaSelected('BilgisayarOdası', 'Masa 6')" [class.clicked]="selectedTable === 6">Masa 6</div>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile class="grid-tile">
+      <div class="oda">
+        <h3>Okuma Odası </h3>
+        <div class="kutucuk" (click)="handleClick('OkumaOdası','Masa 1', 7)"  [class.clicked]="isMasaSelected('OkumaOdası', 'Masa 1')" [class.clicked]="selectedTable === 7">Masa 1</div>
+        <div class="kutucuk" (click)="handleClick('OkumaOdası','Masa 2', 8)"  [class.clicked]="isMasaSelected('OkumaOdası', 'Masa 2')" [class.clicked]="selectedTable === 8">Masa 2</div>
+        <div class="kutucuk" (click)="handleClick('OkumaOdası','Masa 3', 9)"  [class.clicked]="isMasaSelected('OkumaOdası', 'Masa 3')" [class.clicked]="selectedTable === 9">Masa 3</div>
+        <div class="kutucuk" (click)="handleClick('OkumaOdası','Masa 4', 10)" [class.clicked]="isMasaSelected('OkumaOdası', 'Masa 4')" [class.clicked]="selectedTable === 10">Masa 4</div>
+        <div class="kutucuk" (click)="handleClick('OkumaOdası','Masa 5', 11)" [class.clicked]="isMasaSelected('OkumaOdası', 'Masa 5')" [class.clicked]="selectedTable === 11">Masa 5</div>
+        <div class="kutucuk" (click)="handleClick('OkumaOdası','Masa 6', 12)" [class.clicked]="isMasaSelected('OkumaOdası', 'Masa 6')" [class.clicked]="selectedTable === 12">Masa 6</div>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile class="grid-tile">
+      <div class="oda">
+        <h3>Çalışma Odası </h3>
+        <div class="kutucuk" (click)="handleClick('ÇalışmaOdası','Masa 1', 13)" [class.clicked]="isMasaSelected('ÇalışmaOdası', 'Masa 1')" [class.clicked]="selectedTable === 13">Masa 1</div>
+        <div class="kutucuk" (click)="handleClick('ÇalışmaOdası','Masa 2', 14)" [class.clicked]="isMasaSelected('ÇalışmaOdası', 'Masa 2')" [class.clicked]="selectedTable === 14">Masa 2</div>
+        <div class="kutucuk" (click)="handleClick('ÇalışmaOdası','Masa 3', 15)" [class.clicked]="isMasaSelected('ÇalışmaOdası', 'Masa 3')" [class.clicked]="selectedTable === 15">Masa 3</div>
+        <div class="kutucuk" (click)="handleClick('ÇalışmaOdası','Masa 4', 16)" [class.clicked]="isMasaSelected('ÇalışmaOdası', 'Masa 4')" [class.clicked]="selectedTable === 16">Masa 4</div>
+        <div class="kutucuk" (click)="handleClick('ÇalışmaOdası','Masa 5', 17)" [class.clicked]="isMasaSelected('ÇalışmaOdası', 'Masa 5')" [class.clicked]="selectedTable === 17">Masa 5</div>
+        <div class="kutucuk" (click)="handleClick('ÇalışmaOdası','Masa 6', 18)" [class.clicked]="isMasaSelected('ÇalışmaOdası', 'Masa 6')" [class.clicked]="selectedTable === 18">Masa 6</div>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile class="grid-tile">
+      <div class="oda">
+        <h3>Çalışma Odası 2</h3>
+        <div class="kutucuk" (click)="handleClick('ÇalışmaOdası2','Masa 1', 19)" [class.clicked]="isMasaSelected('ÇalışmaOdası2', 'Masa 1')" [class.clicked]="selectedTable === 19">Masa 1</div>
+        <div class="kutucuk" (click)="handleClick('ÇalışmaOdası2','Masa 2', 20)" [class.clicked]="isMasaSelected('ÇalışmaOdası2', 'Masa 2')" [class.clicked]="selectedTable === 20">Masa 2</div>
+        <div class="kutucuk" (click)="handleClick('ÇalışmaOdası2','Masa 3', 21)" [class.clicked]="isMasaSelected('ÇalışmaOdası2', 'Masa 3')" [class.clicked]="selectedTable === 21">Masa 3</div>
+        <div class="kutucuk" (click)="handleClick('ÇalışmaOdası2','Masa 4', 22)" [class.clicked]="isMasaSelected('ÇalışmaOdası2', 'Masa 4')" [class.clicked]="selectedTable === 22">Masa 4</div>
+        <div class="kutucuk" (click)="handleClick('ÇalışmaOdası2','Masa 5', 23)" [class.clicked]="isMasaSelected('ÇalışmaOdası2', 'Masa 5')" [class.clicked]="selectedTable === 23">Masa 5</div>
+        <div class="kutucuk" (click)="handleClick('ÇalışmaOdası2','Masa 6', 24)" [class.clicked]="isMasaSelected('ÇalışmaOdası2', 'Masa 6')" [class.clicked]="selectedTable === 24">Masa 6</div>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

@@ -1,0 +1,33 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="checkbox">
+        <th mat-header-cell *matHeaderCellDef> </th>
+        <td mat-cell *matCellDef="let element"> 
+            <mat-checkbox [(ngModel)]="element.checked"></mat-checkbox> 
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="rez_odaSecimi">
+        <th mat-header-cell *matHeaderCellDef> Oda Adı </th>
+        <td mat-cell *matCellDef="let element"> {{element.rez_odaSecimi}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="rez_masaSecimi">
+        <th mat-header-cell *matHeaderCellDef> Masa Numarası </th>
+        <td mat-cell *matCellDef="let element"> {{element.rez_masaSecimi}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="rez_tarih">
+        <th mat-header-cell *matHeaderCellDef> Tarih </th>
+        <td mat-cell *matCellDef="let element"> {{element.rez_tarih}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="rez_saat">
+        <th mat-header-cell *matHeaderCellDef> Saat </th>
+        <td mat-cell *matCellDef="let element"> {{element.rez_saat}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+<br><br>

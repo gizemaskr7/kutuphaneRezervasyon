@@ -12,28 +12,33 @@ import { UserComponent } from './components/user/user.component';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { HttpClientModule } from '@angular/common/http';
+import { OdasecimComponent } from './components/odasecim/odasecim.component';
+import { ReactiveFormsModule} from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { RezComponent } from "./components/rez/rez.component";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AllComponent,
-    RegisterComponent,
-    LoginComponent,
-    UserComponent
- 
-  ],
-  imports: [MatGridListModule,
-    MatFormFieldModule,
-    BrowserModule,
-    HttpClientModule,
-    AppRoutingModule,
-    MatSelectModule,
-    FormsModule,
-    MatButtonToggleModule
-
-    
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        AllComponent,
+        RegisterComponent,
+        LoginComponent,
+        UserComponent,
+        OdasecimComponent,
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [MatGridListModule,
+        MatFormFieldModule,
+        BrowserModule,
+        HttpClientModule,
+        AppRoutingModule,
+        MatSelectModule,
+        FormsModule,
+        MatButtonToggleModule,
+        MatCheckboxModule,
+        ReactiveFormsModule,
+        MatInputModule, RezComponent]
 })
 export class AppModule { }

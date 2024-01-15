@@ -1,0 +1,71 @@
+.mat-grid-tile {
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   }
+
+  
+   .mat-grid-tile:nth-child(1) { background-color: #ffc107; }
+   .mat-grid-tile:nth-child(2) { background-color: #00bcd4; }
+   .mat-grid-tile:nth-child(3) { background-color: #9ccc65; }
+   .mat-grid-tile:nth-child(4) { background-color: #607d8b; }
+   
+   .kutucuk {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+   }
+   .oda {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .oda h3 {
+    margin-top: 0;
+  }
+   .secim {
+    width: 50%;
+    float: right;
+    height: 100%;
+   }
+   
+   .grid-tile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   }
+   
+   .kutucuk {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+    cursor: pointer;
+   }
+   
+   .kutucuk:hover {
+    background-color: #f0f0f0; 
+   }
+   
+   .kutucuk.clicked {
+    background-color: #a0a0a0;
+    color: white; 
+   }
+
+   
